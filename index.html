@@ -1,3 +1,87 @@
-<head> 谢照冬的个人网站 </head>
-<h1>你好<br>世界</p>
-<img src="网站头像.jpg" alt="网站头像" width="500">
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donger</title>
+    <style>
+      body {
+        background-image: url("背景图.png");
+        background-size: cover; /* 背景图覆盖整个页面 */
+        background-attachment: fixed; /* 背景图固定不动 */
+        background-position: center; /* 背景图居中 */
+      }
+      .btn {
+        display: inline-block;
+        padding: 20px 20px; /* 控制按钮大小（内边距） */
+        font-size: 16px; /* 文字大小 */
+        line-height: 1;
+        border: 2px solid #333; /* 边框样式 */
+        background: #000000; /* 背景色 */
+        color: #333; /* 文字颜色 */
+        border-radius: 60px; /* 圆角：调大变更圆润 */
+        cursor: pointer;
+      }
+      .flex-container {
+        display: flex; /* 弹性布局 */
+        width: 95%;
+        margin: 0 auto;
+      }
+      .flex-box {
+        flex: 1; /* 两个元素平分父容器宽度（各占50%） */
+        padding: 20px;
+        text-align: center;
+        box-sizing: border-box; /* 边框包含在宽度内 */
+      }
+      .flex-left {
+        border: 2px dashed #2ecc71;
+        margin-right: 10%;
+      }
+      .flex-right {
+        border: 2px dashed #9b59b6;
+      }
+      .img-1 {
+        text-align: center;
+        padding: 0;
+      }
+      .border-1 {
+        text-align: center;
+        border: 2px dashed green;
+        padding: 5px;
+        margin: 5px;
+        font-size: 150%;
+        line-height: 1;
+        letter-spacing: 20px;
+      }
+      p {
+        color: rgb(133, 3, 240);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn" onclick="showAlert()"></button>
+    <script>
+      function showAlert() {
+        alert("欢迎访问我的网站！");
+      }
+    </script>
+    <div class="img-1">
+      <img src="网站头像.jpg" alt="网站头像" width="200" height="200" />
+    </div>
+    <div class="border-1">
+      <p>欢迎来到我的网站</p>
+      <p>里面有你想了解的所有内容</p>
+      <a href="https://fzggw.cq.gov.cn/zwxx/tzgg/202002/t20200212_5185815.html"
+        >访问林业政策</a
+      >
+    </div>
+    <div class="flex-container">
+      <div class="flex-box flex-left">你好</div>
+      <div class="flex-box flex-right">我好</div>
+    </div>
+    <div>
+      <p>第一次爱的人</p>
+      <audio src="第一次爱的人.mp3" autoplay controls></audio>
+    </div>
+  </body>
+</html>
